@@ -3,7 +3,7 @@ window.singleProduct = {
 
     getProduct: function (productId) {
         $.ajax({
-            url: Shop.API_BASE_URL + "/products/" + productId,
+            url: singleProduct.API_BASE_URL + "/products/" + productId,
             method: "GET"
         }).done(function (response) {
             console.log(response);
